@@ -1,2 +1,5 @@
 ---
 # defaults file for setup-webserver-user-group
+APP_BASE_DIR: "/opt/dev"
+WEBSERVER_USER: www-data
+VAGRANT: False
