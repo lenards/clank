@@ -1,0 +1,6 @@
+---
+# defaults file for local-env-additions
+
+ATMOSPHERE_GROUP_USERS:
+  - vagrant
+  - www-data
