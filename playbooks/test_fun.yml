@@ -1,0 +1,9 @@
+---
+- name: Playbook to run my test
+  hosts: all
+
+  roles:
+    - { role: troposphere-setup-troposphere, template_vars: "{{ TROPO }}",
+        tags: [ 'variables'] }
+
+#    - { role: gen-ini-template, template_vars: "{{ TROPO }}" }

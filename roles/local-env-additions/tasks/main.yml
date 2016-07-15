@@ -2,10 +2,11 @@
 # tasks file for local-env-additions
 - block:
 
-  - group: name=atmosphere state=present
+  - name: add group named 'atmosphere'
+    group: name=atmosphere state=present
 
   - name: add ATMOSPHERE_GROUP_USERS to "atmosphere" group
-    user: name={{ item }} group=atmosphere
+    user: name={{ item }} group=atmosphere append=yes
     with_items: "{{ ATMOSPHERE_GROUP_USERS }}"
 
   - name: change group group permissions for "{{ APP_BASE_DIR }}"
