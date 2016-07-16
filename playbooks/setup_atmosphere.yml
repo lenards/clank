@@ -91,6 +91,6 @@
         tags: ['atmosphere', 'deploy', 'nginx-uwsgi'] }
 
     - { role: setup-webserver-user-group,
-        APP_BASE_DIR: "{{ TROPOSPHERE_LOCATION }}",
+        APP_BASE_DIR: "{{ ATMOSPHERE_LOCATION }}",
         VAGRANT: "{{ VAGRANT }}",
         tags: ['troposphere'] }
