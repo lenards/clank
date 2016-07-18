@@ -93,4 +93,5 @@
     - { role: setup-webserver-user-group,
         APP_BASE_DIR: "{{ ATMOSPHERE_LOCATION }}",
         VAGRANT: "{{ VAGRANT }}",
-        tags: ['troposphere'] }
+        WEBSERVER_USER: "www-data",
+        tags: ['atmosphere','set-permissions'] }
